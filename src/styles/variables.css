@@ -1,0 +1,36 @@
+/* ── CCS Brand CI Variables ────────────────────────────────────── */
+:root {
+  /* Brand Colors */
+  --ccs-blue: #3165A7;
+  --ccs-teal: #1A9A83;
+  --ccs-orange: #F3982D;
+  --ccs-navy: #1F3C6E;
+  --ccs-text: #58595B;
+  --ccs-white: #FFFFFF;
+  --ccs-bg: #F5F7FA;
+  --ccs-border: #E0E6ED;
+
+  /* Element Plus Override */
+  --el-color-primary: #3165A7;
+  --el-color-success: #1A9A83;
+  --el-color-warning: #F3982D;
+  --el-color-danger: #E53E3E;
+  --el-border-color: #E0E6ED;
+  --el-bg-color: #F5F7FA;
+  --el-text-color-primary: #58595B;
+  --el-border-radius-base: 8px;
+
+  /* Gradients */
+  --ccs-gradient: linear-gradient(135deg, #1F3C6E 0%, #3165A7 50%, #1A9A83 100%);
+  --ccs-gradient-light: linear-gradient(135deg, #EBF2FA 0%, #E6F5F2 100%);
+
+  /* Shadows */
+  --ccs-shadow-sm: 0 2px 8px rgba(49, 101, 167, 0.08);
+  --ccs-shadow-md: 0 4px 16px rgba(49, 101, 167, 0.12);
+  --ccs-shadow-lg: 0 8px 32px rgba(49, 101, 167, 0.16);
+
+  /* Layout */
+  --sidebar-width: 240px;
+  --header-height: 64px;
+  --content-max-width: 1200px;
+}

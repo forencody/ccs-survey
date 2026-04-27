@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap');
+@import './variables.css';
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  font-family: 'Inter', 'Noto Sans TC', 'Noto Sans', sans-serif;
+  color: var(--ccs-text);
+  background: var(--ccs-bg);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── Typography ───────────────────────────────────────────────── */
+h1 { font-size: 1.75rem; font-weight: 700; color: var(--ccs-navy); }
+h2 { font-size: 1.375rem; font-weight: 600; color: var(--ccs-navy); }
+h3 { font-size: 1.125rem; font-weight: 600; color: var(--ccs-text); }
+
+/* ── Cards ────────────────────────────────────────────────────── */
+.ccs-card {
+  background: var(--ccs-white);
+  border-radius: 12px;
+  border: 1px solid var(--ccs-border);
+  box-shadow: var(--ccs-shadow-sm);
+  padding: 24px;
+}
+
+/* ── Buttons ──────────────────────────────────────────────────── */
+.el-button--primary {
+  background: var(--ccs-blue) !important;
+  border-color: var(--ccs-blue) !important;
+  font-weight: 600;
+}
+.el-button--primary:hover {
+  background: var(--ccs-navy) !important;
+  border-color: var(--ccs-navy) !important;
+}
+.el-button--success {
+  background: var(--ccs-teal) !important;
+  border-color: var(--ccs-teal) !important;
+}
+
+/* ── Status Tags ──────────────────────────────────────────────── */
+.tag-draft   { background: #F1F5F9; color: #64748B; }
+.tag-active  { background: #E6F5F2; color: var(--ccs-teal); }
+.tag-closed  { background: #F3F4F6; color: #9CA3AF; }
+
+/* ── Page Header ──────────────────────────────────────────────── */
+.page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.page-header h1 { margin: 0; }
+
+/* ── Scrollbar ────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--ccs-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #B0BEC5; }
+
+/* ── Transitions ──────────────────────────────────────────────── */
+.fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
+.fade-enter-from, .fade-leave-to { opacity: 0; }
+
+.slide-enter-active, .slide-leave-active { transition: all 0.25s ease; }
+.slide-enter-from { opacity: 0; transform: translateY(8px); }
+.slide-leave-to { opacity: 0; transform: translateY(-8px); }
